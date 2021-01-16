@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    < link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<br>
+<br>
+<br>
+
+<form action = "" method = 'POST'>
+
+    {%  csrf_token %}
+    <h1>
+        Find a dance mate!
+    </h1>
+    <div id="descr">
+        Are you a dance student searching for a mentor?
+        <br> A mentor looking for students?
+        <br> A choreographer looking for a choreographer friend?
+        <br> Fill out the form below to see who you match up with!
+    </div>
+    <p> Enter your name: {{ form.name }}</p>
+
+    <style>
+        h1{
+            text-align: center;
+            font-family:'Poiret One','Lobster';
+
+        }
+
+        div#descr{
+            text-align: center;
+            margin-left: 2px;
+            font-family:'Poiret One','Lobster';
+            text-size:2px;
+        }
+        p{
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #461e87;
+
+
+        }
+    </style>
+
+    <p> What is your level of dance experience?
+    {{ form.experience }}</p>
+
+
+    <p> What role(s) do you take on in the dance world?</p>
+    {{ form.role }}
+
+    <p> What dance style(s) are you willing to teach?
+        <br> *select only if you're a mentor!</p>
+    {{ form.skills }}
+
+    <p> What dance styles do you want to choreograph?
+        <br>*select only if you're a choreographer!</p>
+
+    {{ form.choreography_pref }}
+    <p> What dance styles do you want to learn?
+        <br>*select only if you're a student!</p>
+    {{ form.learning_pref }}
+    <input type="submit" value = 'Save'/>
+</form>
+<style>
+    form{
+        position:absolute;
+        left: 50%;
+        margin-left: -300px; (half the element width))
+        width: 100%;
+        background-color: #ece1f5;
+        font-weight:500;
+        border-radius: 20px;
+        font-family:'Poiret One','Lobster';
+        font-size: 20px;
+    }
+</style>
+
+</body>
+    <style>
+        body{
+            background-color: #decced;
+        }
+    </style>
+
+{% endblock %}
+
+</html>

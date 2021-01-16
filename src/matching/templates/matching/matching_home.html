@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block content %}
+    <link rel="icon" sizes="192x192" href="../../../images/webrtc-icon-192x192.png">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type = "text/css" href="{% static 'djangoProject1/video.css'%}">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Web X Dance Home </title>
+
+</head>
+<h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    webXdance
+</h1>
+<style>
+    h1{
+       color: #1d2d54;
+       text-align:center;
+
+       font-size: 70px;
+       text-shadow:3px 3px #45b09e;
+    }
+</style>
+
+<body>
+
+        <img src="{% static 'djangoProject1/webexlogo.PNG' %}" class="u-logo-image u-logo-image-1" data-image-width="20">
+    <style>
+
+        img{
+            max-width:20%;
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            margin:auto;
+        }
+        body{
+            background-position: center;
+            background-size: cover;
+            background-image:url("https://wallpaperaccess.com/full/826469.jpg");
+            min-height: 100%;
+        }
+
+    </style>
+    {% endblock %}
+</body>
+
+</html>

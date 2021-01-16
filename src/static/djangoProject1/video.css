@@ -1,0 +1,92 @@
+/*
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+ */
+button {
+  margin: 0 20px 0 0;
+  width: 83px;
+  border-color: aqua;
+}
+
+#myNavbar{
+  color: #74a1e8;
+
+                         }
+button#hangupButton {
+    margin: 0;
+}
+
+button#startButton {
+     background-color: #62C584;
+     border: #3E5C9A;
+     border-radius: 50px;
+     color: darkgreen;
+     text-decoration: none;
+     text-size: 5px;
+     margin: 4px 2px;
+     cursor: pointer;
+     font-size: 20px;
+     font-style: inherit;
+}
+
+.horizontal-center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+}
+button#callButton {
+     background-color: #62C584;
+     border: #3E5C9A;
+     border-radius: 50px;
+     color: darkgreen;
+     text-decoration: none;
+     text-size: 5px;
+     margin: 4px 2px;
+     cursor: pointer;
+     font-size: 20px;
+     font-style: inherit;
+}
+
+button#hangupButton {
+     background-color: #62C584;
+     border: #3E5C9A;
+     border-radius: 50px;
+     color: darkgreen;
+     text-decoration: none;
+     text-size: 5px;
+     margin: 4px 2px;
+     cursor: pointer;
+     font-size: 20px;
+     font-style: inherit;
+}
+
+video {
+  margin: 0 10px 20px 40px;
+  --width: 40%;
+  width: var(--width);
+  height: calc(var(--width) * 0.75);
+}
+
+video#video1 {
+  margin: 0 10px 20px 40px;
+}
+
+@media screen and (max-width: 400px) {
+  button {
+    margin: 0 10px 10px 0;
+  }
+
+  video {
+    height: 90px;
+    margin: 20px 0 10px 40px;
+    width: calc(50% - 8px);
+  }
+
+  video#video1 {
+    margin: 0 10px 10px 40px;
+  }
+
+}

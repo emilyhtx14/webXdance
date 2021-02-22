@@ -13,21 +13,6 @@ def matching_create_view(request):
         'form': form
     }
     return render(request, "matching/matching_create.html", context)
-"""
-def matching_detail_view(request):
-    patient_list = Matching.objects.all()
-    
-    '''
-    context = {
-        'title': obj.title,
-        'description':obj.description
-    }
-    '''
-    context = {
-        'patients': patient_list
-    }
-    return render(request, "matching/matching_detail.html", context)
-"""
 
 def create_home_view(request):
     return render(request, "matching/matching_home.html", {})
